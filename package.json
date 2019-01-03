@@ -1,0 +1,29 @@
+{
+  "name": "kodilla-18.6",
+  "version": "1.0.0",
+  "description": "testowy plick package.json do nauki npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluffend/kodilla-18.6.git"
+  },
+  "keywords": [
+    "nauka",
+    "npm",
+    "node"
+  ],
+  "author": "Slawek",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bluffend/kodilla-18.6/issues"
+  },
+  "homepage": "https://github.com/bluffend/kodilla-18.6#readme",
+  "dependencies": {
+    "colors": "^1.3.2",
+    "stat-mode": "^0.2.2"
+  }
+}

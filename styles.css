@@ -1,0 +1,33 @@
+.countercontainer {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    margin: 5px;
+}
+.increment, .counter, .decrement {
+    margin: 10px;
+    display: flex;
+    flex-direction: row ;
+    align-items: center;
+    justify-content: center;
+}
+button {
+    padding: 20px;
+    color: green;
+    border-radius: 5px;
+}
+
+#app1 {
+    background: #C96D3C;
+}
+
+#app2 {
+    background: rgb(117, 177, 40);
+}
+
+#app3 {
+    background: rgb(184, 31, 176);
+}
