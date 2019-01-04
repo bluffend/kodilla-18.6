@@ -6,12 +6,12 @@ var Counter = React.createClass({
     },
     getDefaultProps: function () {
         console.log('getDefaultProps: można ustawić domyślne wartości propsów - np. nazwę');
-    }, 
+    },
     componentWillMount: function () {
-        console.log('componentWillMount: można zacząć wykonywać obliczenia lub procesy w oparciu o wartości propsów'); 
+        console.log('componentWillMount: można zacząć wykonywać obliczenia lub procesy w oparciu o wartości propsów');
     },
     componentDidMount: function () {
-        console.log('componentDidMount: w tym momencie można Możemy wykonywać manipulacje na obiektach albo pobrać dane'); 
+        console.log('componentDidMount: w tym momencie można Możemy wykonywać manipulacje na obiektach albo pobrać dane');
     },
     componentWillReceiveProps: function () {
         console.log('componentWillReceiveProps: można wykorzystać do zmiany np. imienia w formularzu');
@@ -61,8 +61,23 @@ var Counter = React.createClass({
     }
 });
 
-var element = React.createElement(Counter);
-ReactDOM.render(element, document.getElementById('app1'));
-ReactDOM.render(element, document.getElementById('app2'));
-ReactDOM.render(element, document.getElementById('app3'));
+var Container = React.createClass({
+    render: function () {
+        return (
+            React.createElement('div', { className: 'container' },
+                React.createElement(Counter),
+                React.createElement(Counter),
+                React.createElement(Counter)
+            )
+        );
+    }
+
+});
+
+var container = React.createElement(Container);
+//var element = React.createElement(Counter);
+
+ReactDOM.render(container, document.getElementById('app'));
+//ReactDOM.render(element, document.getElementById('app2'));
+//ReactDOM.render(element, document.getElementById('app3'));
 
