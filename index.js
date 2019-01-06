@@ -75,9 +75,4 @@ var Container = React.createClass({
 });
 
 var container = React.createElement(Container);
-//var element = React.createElement(Counter);
-
 ReactDOM.render(container, document.getElementById('app'));
-//ReactDOM.render(element, document.getElementById('app2'));
-//ReactDOM.render(element, document.getElementById('app3'));
-

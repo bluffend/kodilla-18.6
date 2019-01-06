@@ -4,8 +4,8 @@
   "description": "testowy plick package.json do nauki npm",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js"
+    "start": "npm run watch:browsersync",
+    "watch:browsersync": "browser-sync start --server --files 'styles.css' 'index.html' 'index.js' "
   },
   "repository": {
     "type": "git",
@@ -22,8 +22,8 @@
     "url": "https://github.com/bluffend/kodilla-18.6/issues"
   },
   "homepage": "https://github.com/bluffend/kodilla-18.6#readme",
-  "dependencies": {
-    "colors": "^1.3.2",
-    "stat-mode": "^0.2.2"
+  "dependencies": {},
+  "devDependencies": {
+    "browser-sync": "^2.26.3"
   }
 }
